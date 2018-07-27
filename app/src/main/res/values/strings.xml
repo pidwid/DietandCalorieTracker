@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Diet and Calorie Tracker</string>
+    <string name="searchButton">Search for food</string>
+    <string name="fitTestButton">Take the fit test</string>
+    <string name="add_to_calculator">Add to calorie calculator</string>
+    <string name="details"> Enter Details</string>
+    <string name="weight"> Weight (In kg) </string>
+    <string name="height"> Height (In cm)</string>
+    <string name="age"> Age (In years) </string>
+    <string name="activity"> Degree of Activity </string>
+    <string name="male"> Male </string>
+    <string name="female"> Female </string>
+    <string name="color">#FFF</string>
+    <string name="color1">#5d1049</string>
+    <string name="calorie"> Calories required : </string>
+    <string name="protein"> Protein intake : </string>
+    <string name="bmi"> BMI : </string>
+    <string name="bmr"> BMR : </string>
+    <string name="calorie_text">Today\'s Calorie Count</string>
+    <string name="zero"> 0 </string>
+    <string name="fit_slogan">Take Fit Test to become fittest</string>
+    <string name="about_us"> About us </string>
+    <string name="made">Made In India</string>
+    <string name="degree_activity"> Degree of Activity</string>
+
+
+    <string-array name="Activity">
+        <item>No Exercise</item>
+        <item>Light Active (Exercise 1-2 times a week)</item>
+        <item>Moderate Active (Exercise 3-5 times a week)</item>
+        <item>Very Active (Exercise 6-7 times a week)</item>
+        <item>Extra Active (Very hard exercise/physical job)</item>
+
+    </string-array>
+
+
+</resources>
+
+

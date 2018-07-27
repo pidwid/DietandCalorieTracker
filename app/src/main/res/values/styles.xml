@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#191919</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+
+
+
+    </style>
+
+    <style name="fit_button_style">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_marginLeft"> 16dp </item>
+        <item name="android:color">#FFF</item>
+        <item name="android:layout_marginTop"> 10dp </item>
+        <item name="android:layout_marginStart"> 16dp </item>
+        <item name="android:layout_marginEnd"> 16dp </item>
+        <item name="android:elevation"> 1dp </item>
+
+    </style>
+
+
+    <style name="Heading">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_marginLeft"> 16dp </item>
+        <item name="android:color">#FFF</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_marginTop"> 10dp </item>
+        <item name="android:layout_marginStart"> 16dp </item>
+        <item name="android:layout_marginEnd"> 16dp </item>
+
+    </style>
+
+    <style name="paragraph">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_marginLeft"> 16dp </item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:color">#FFF</item>
+        <item name="android:layout_marginTop"> 10dp </item>
+        <item name="android:layout_marginStart"> 16dp </item>
+        <item name="android:layout_marginEnd"> 16dp </item>
+
+    </style>
+
+</resources>

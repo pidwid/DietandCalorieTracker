@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fitTestButton"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.android.dietandcalorietracker.fitTestButton">
+
+    <TextView
+        android:id="@+id/details_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/details"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <EditText
+        android:id="@+id/weight_text"
+        style="@style/fit_button_style"
+        android:layout_marginTop="25dp"
+        android:hint="@string/weight"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/height_text"
+        android:inputType="numberDecimal"
+        style="@style/fit_button_style"
+        android:hint="@string/height" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/age_text"
+        style="@style/fit_button_style"
+        android:hint="@string/age" />
+
+    <RadioGroup
+        android:id="@+id/sex"
+        style="@style/fit_button_style"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/male_button"
+            android:layout_width="match_parent"
+            android:onClick="onRadioButtonClicked"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/male"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/female_button"
+            android:layout_width="match_parent"
+            android:onClick="onRadioButtonClicked"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/female"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        style="@style/fit_button_style"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/degree_activity"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_degree_of_activity"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/textView"
+            android:paddingLeft="10dp"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/take_test"
+        style="@style/fit_button_style"
+        android:layout_marginTop="60dp"
+        android:text="@string/fitTestButton" />
+
+
+
+</LinearLayout>

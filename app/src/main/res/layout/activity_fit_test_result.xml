@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FitTestResult"
+    android:background="@drawable/back">
+
+
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            style="@style/fit_button_style"
+            android:text="@string/calorie"
+            android:layout_weight="1"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:id="@+id/calorie_count"
+            style="@style/fit_button_style"
+            android:layout_weight="1"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/zero"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_below="@id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22sp">
+
+        <TextView
+            style="@style/fit_button_style"
+            android:text="@string/protein"
+            android:layout_weight="1"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:id="@+id/protein_count"
+            style="@style/fit_button_style"
+            android:layout_weight="1"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/zero"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:id="@+id/three"
+        android:layout_below="@id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            style="@style/fit_button_style"
+            android:text="@string/bmi"
+            android:layout_weight="1"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:id="@+id/bmi_count"
+            style="@style/fit_button_style"
+            android:layout_weight="1"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/zero"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_below="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_below="@id/view3"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            style="@style/fit_button_style"
+            android:text="@string/bmr"
+            android:layout_weight="1"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:id="@+id/bmr_count"
+            style="@style/fit_button_style"
+            android:layout_weight="1"
+            android:fontFamily="@font/varela_round"
+            android:text="@string/zero"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/darker_gray"
+        />
+
+
+    <ImageView
+        android:id="@+id/help_img"
+        android:layout_width="74dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="help_img"
+        android:src="@drawable/question" />
+
+
+
+
+</RelativeLayout>
