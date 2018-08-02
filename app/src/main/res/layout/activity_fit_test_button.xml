@@ -87,20 +87,21 @@
 
         <Spinner
             android:id="@+id/spinner_degree_of_activity"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@id/textView"
-            android:paddingLeft="10dp"/>
+            android:entries="@array/Activity"
+            android:paddingLeft="10dp" />
 
     </RelativeLayout>
-
 
 
     <Button
         android:id="@+id/take_test"
         style="@style/fit_button_style"
         android:layout_marginTop="60dp"
+        android:onClick="take_test"
         android:text="@string/fitTestButton" />
 
 

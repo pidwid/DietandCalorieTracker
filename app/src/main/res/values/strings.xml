@@ -25,10 +25,11 @@
 
 
     <string-array name="Activity">
+        <item>Select Degree of Exercise</item>
         <item>No Exercise</item>
-        <item>Light Active (Exercise 1-2 times a week)</item>
-        <item>Moderate Active (Exercise 3-5 times a week)</item>
-        <item>Very Active (Exercise 6-7 times a week)</item>
+        <item>Light Active (Exercise 1&#8211;2 times a week)</item>
+        <item>Moderate Active (Exercise 3&#8211;5 times a week)</item>
+        <item>Very Active (Exercise 6&#8211;7 times a week)</item>
         <item>Extra Active (Very hard exercise/physical job)</item>
 
     </string-array>
