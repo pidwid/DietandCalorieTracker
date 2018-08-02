@@ -22,7 +22,7 @@ public class fitTestButton extends AppCompatActivity implements AdapterView.OnIt
 
     double height, weight, calorie, bmr;
     String protein, bmi, sex;
-    int age, pos = -1;
+    int age, pos=-1;
     EditText weight_text;
     EditText height_text;
     EditText age_text;
@@ -32,7 +32,7 @@ public class fitTestButton extends AppCompatActivity implements AdapterView.OnIt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fit_test_button);
-
+        pos = -1;
         weight_text = findViewById(R.id.weight_text);
         height_text = findViewById(R.id.height_text);
         age_text = findViewById(R.id.age_text);
@@ -81,7 +81,7 @@ public class fitTestButton extends AppCompatActivity implements AdapterView.OnIt
             else if (sex.equals("female"))
                 bmr = ((10 * weight) + (6.25 * height) - (5 * age) - 161);
 
-            if (pos == -1) {
+            if (pos == -1||weight==0||height==0||age==0) {
 //                        int falseException = 1 / 0;
                 Exception e = new Exception();
                 throw e;
@@ -133,6 +133,8 @@ public class fitTestButton extends AppCompatActivity implements AdapterView.OnIt
         }
 
         switch (position - 1) {
+
+
             case 0:
                 pos = 0;
                 break;
@@ -148,6 +150,8 @@ public class fitTestButton extends AppCompatActivity implements AdapterView.OnIt
             case 4:
                 pos = 4;
                 break;
+                default:
+                    pos=-1;
         }
 
     }
